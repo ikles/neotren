@@ -1,0 +1,286 @@
+@media only screen and (max-width : 1680px) {
+  .contain {
+    max-width: 1170px;
+}
+.header__slide-text {
+  font-size: 80px;
+}
+.logo__img-wrap {  
+  margin-top: 0;
+}
+.logo__img-wrap,
+.footer__logo {
+  width: 160px;  
+}
+.logo__slogan {
+  font-size: 12px;
+
+  margin-left: 25px;
+}
+.phones__item:not(:last-child) {
+  margin-right: 30px;
+}
+.phones {
+  margin-left: 50px;
+}
+.phones__phone {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.phones__city {
+  font-size: 12px;
+}
+.btn {
+  height: 48px;
+  font-size: 14px;
+}
+.burger {
+  margin-left: 20px;
+}
+.burger,
+.mnu__close {
+  width: 48px;
+  height: 48px;
+}
+.burger__line {
+  width: 20px;
+}
+.open {
+  padding-left: 85px;
+  padding-top: 65px;
+}
+.open-mnu__a {
+  font-size: 28px;
+ 
+}
+.open-mnu__arrow {
+  width: 24px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.open__btn {
+  margin-top: 72px;
+}
+.open__phones {
+  margin-top: 104px;
+}
+.open__phones-phone {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.open__phones-mail {
+  margin-top: 15px;
+}
+.open__phones-mail,
+.open__phones-city {
+  font-size: 14px;
+}
+
+.footer__phones-phone {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.footer__phones-mail,
+.footer__phones-city {
+  font-size: 13px;
+}
+.footer__phones-mail {
+  margin-top: 15px;
+}
+.footer__phones-item:not(:last-child) {
+  margin-right: 62px;
+}
+.footer {
+  padding: 85px 0 96px
+}
+.footer__phones {
+  
+}
+.footer__logo {
+  margin-top: -6px;
+  margin-right: 75px;
+}
+}
+
+@media only screen and (max-width : 1199px) {
+  .show-1199 {
+    display: block;
+    .top__btn {
+      display: inline-flex;
+    } 
+  }
+  
+
+  .hide-1199 {
+    display: none;
+  }
+  .contain {
+    max-width: 970px
+  }    
+
+  .top__btn-wrap {
+    width: 100%;
+    position: absolute;
+    bottom: 41px;
+    left: 0;
+  }
+  .header__slide-text {
+    font-size: 60px;
+  }
+  .top__actions {    
+            align-items: flex-start;
+  }
+  .phones {
+    margin-left: auto;
+  }
+  .phones__item:not(:last-child) {
+    margin-right: 45px;
+  }
+  .header__slide-text-wrap {
+    bottom: 131px;
+  }
+  .open-mnu__a {
+    font-size: 20px;
+     background: url("../img/mnu-arrow.svg") $nr right center;  
+          background-size: 16px;
+          padding-right: 31px;    
+  }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+  .contain {
+    max-width: 750px 
+  }   
+  .logo {
+    display: block;
+  }
+  .logo__slogan {
+    margin-left: 0;
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 1.4;
+  } 
+  .burger,
+.mnu__close {
+  width: 44px;
+  height: 44px;
+}
+.mnu__close {  
+          background-size: 11px;
+}
+.burger__line {
+  width: 16px;
+  height: 2px;
+  margin-top: 0;
+  &:not(:last-child) {
+    margin-bottom: 3px;
+  }
+}
+
+.open__btn {
+  margin-top: 42px;
+}
+.open__phones {
+  margin-top: 84px;
+}
+.open {
+  padding-top: 35px;
+  padding-left: 50px;
+}
+.open__phones-phone {
+  font-size: 16px;
+}
+.open__phones-item:not(:last-child) {
+  margin-right: 70px;
+}
+.open__phones-phone {
+  margin-bottom: 5px;
+}
+.open__phones-mail {
+  margin-top: 5px;
+}
+.open__phones-city {
+  span {
+    display: none;
+  }
+}
+.footer__inn {  
+          flex-wrap: wrap;                            
+}
+.footer__phones {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 35px;  
+          justify-content: space-between;
+          width: 100%;
+}
+.footer__phones-item:not(:last-child) {
+  margin-right: unset;
+}
+.footer__time {
+  width: 100%;
+  order: 10;
+  margin-top: 25px;
+}
+} 
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .contain {
+    max-width: 600px;
+  }
+}      
+
+@media only screen and (max-width : 640px) {
+  .contain {
+    max-width: 530px;
+  }
+} 
+
+
+
+@media only screen and (max-width : 570px) {
+  .contain {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+
+@media only screen and (max-width : 480px) {
+  
+}
+
+@media only screen and (max-width : 375px) {
+  
+}
+
+@media only screen and (max-width : 360px) {
+  
+}
+
+@media only screen and (max-width : 320px) {
+  body, body > * {
+    width: auto;
+    min-width: 320px;
+  }
+}
+
+
+@media only screen and (min-width : 1080px) {
+  .main-mnu {
+    display: block !important;
+  } 
+
+  .hidden-mnu {
+    display: none;
+  }
+} 
+
+
