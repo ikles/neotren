@@ -67,7 +67,10 @@
         <div class="contain">
           <div class="top__inn">
             <a href="#" class="logo">
-              <div class="logo__img-wrap"><img src="img/logo.png" class="logo__img" /></div>
+              <div class="logo__img-wrap">
+                <img class="hide-1680" src="img/logo.png" class="logo__img" />
+                <img class="show-1680" src="img/logo-pda.png" class="logo__img" />
+              </div>
               <span class="logo__slogan">
                 Передовые фитнес-<br />
                 технологии
@@ -150,55 +153,213 @@
         <div class="header__total">0<span></span></div>
       </div>
       <div class="show-1199 lcpadding top__btn-wrap">
-      <a href="#" class="top__btn btn btn--red">Подобрать оборудование</a>
-    </div>
+        <a href="#" class="top__btn btn btn--red">Подобрать оборудование</a>
+      </div>
     </header>
-
     <main class="main">
 
-    </main>
-    <footer class="footer"> 
-
-      <div class="contain">
-        <div class="footer__inn">
-          <a class="footer__logo"><img src="img/f-logo.png"></a>
-          <div class="footer__time">Будни: c 9:00 до 18:00</div>
-          <div class="footer__phones">
-            <div class="footer__phones-item">
-              <a href="tel:+7 (499) 399-35-16" class="footer__phones-phone">+7 (499) 399-35-16</a>
-              <div class="footer__phones-city">
-                Москва<br />
-                Каширское шоссе 19, к.1
+      <div class="calculate">
+        <div class="calculate__top">
+          <div class="contain">
+            <div class="calculate__inn">
+              <div class="calculate__l">Рассчитайте стоимость оснащения Вашего клуба онлайн</div>
+              <div class="calculate__r">
+                <div class="calculate__desc">Мы поможем создать уникальную среду для тренировок с&nbsp;отражением духа клуба и&nbsp;стремлений вашего бизнеса.</div>
+                <div class="calculate__start">Рассчитать</div></div>
               </div>
-              <a href="#" class="footer__phones-mail">pro@neotren.ru </a>
             </div>
-
-            <div class="footer__phones-item">
-              <a href="tel:+7 (499) 399-35-16" class="footer__phones-phone">+7 (812) 612-80-65 </a>
-              <div class="footer__phones-city">
-                Санкт-Петербург<br />
-                ул. Репищева, 20а, офис 522
-              </div>
-              <a href="#" class="footer__phones-mail">info-spb@neotren.ru</a>
-            </div>
-            <div class="footer__phones-item">
-              <a href="tel:+7 (499) 399-35-16" class="footer__phones-phone">+7 (861) 204-21-31 </a>
-              <div class="footer__phones-city">
-                Краснодар<br />
-                ул. Дзержинского, д. 7, офис 702<br />
-                склад: х. Октябрьский, ул. <br> Живописная, д. 72
-              </div>
-              <a href="#" class="footer__phones-mail">info-kdr@fitathlon.ru </a>
-            </div>     
+          </div>
+          <div class="calculate__bot">
+            <img src="img/calculate.jpg" class="calculate__bg">
           </div>
         </div>
-      </div>     
-    </footer>
-  </div>
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/slick.js"></script>
-  <script src="js/common.js"></script>
-</body>
-</html>
+        <div class="calc">
+          <div class="calc__close"></div>
+
+          <form class="calc__form">
+            <div class="calc__stage-wrap">
+              <div class="calc__stage calc__stage-1" data-stage="1">
+                <div class="calc__tit">Выберете, что вам нужно</div>
+                <div class="calc__subtit">Вы можете выбрать сразу несколько позиций</div>
+                <div class="calc__checkboxes">
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_1" checked>
+                    <span class="calc__check-span">Комплексное оснащение</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_1">
+                    <span class="calc__check-span">Подбор оборудования</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_1">
+                    <span class="calc__check-span">3d моделирование</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_1">
+                    <span class="calc__check-span">Консалтинг</span>
+                  </label>
+                </div>
+              </div>
+              <div class="calc__stage calc__stage-2" data-stage="2">
+                <div class="calc__tit">Выберете тип фитнес-оборудования</div>
+                <div class="calc__subtit">Вы можете выбрать сразу несколько позиций</div>
+                <div class="calc__checkboxes">
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_2" >
+                    <span class="calc__check-span">Кардиотренажеры</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_2" checked>
+                    <span class="calc__check-span">Свободное железо</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_2">
+                    <span class="calc__check-span">Силовые тренажеры</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_2">
+                    <span class="calc__check-span">Функциональный и групповой тренинг</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_2">
+                    <span class="calc__check-span">Допоборудование</span>
+                  </label>
+                </div>
+              </div>
+              <div class="calc__stage calc__stage-3" data-stage="3">
+                <div class="calc__tit">Выберете сегмент фитнес-клуба</div>
+                <div class="calc__checkboxes">
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_3">
+                    <span class="calc__check-span">Стандарт</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_3" checked>
+                    <span class="calc__check-span">Комфорт</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_3">
+                    <span class="calc__check-span">Бизнес</span>
+                  </label>
+                  <label class="calc__label">
+                    <input type="checkbox" name="stage_3">
+                    <span class="calc__check-span">Премиум</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="calc__stage calc__stage-final" data-stage="4">
+                <div class="calc__tit">Спасибо!</div>
+              </div>
+            </div>
+            <div class="calc__nav">
+              <div class="calc__nav-btn _prev">Назад</div>
+              <div class="calc__nav-btn _next">Далее</div>
+            </div>
+            <div class="calc__submit-wrap">            
+              <button class="calc__submit btn btn--red">Отправить заявку</button>
+            </div>
+          </form>        
+        </div>
+
+
+        <div class="projects">
+          <div class="contain">
+            <div class="projects__title">Проекты</div>
+            <div class="proj-sl">
+              <div class="proj-sl__slide">
+                <div class="proj-sl__top">
+                  <a href="#" class="proj-sl__tit">Фитнес-клуб «Loft Fitness»</a>
+                  <a href="#" class="proj-sl__link hide-767">instagramm</a>
+                  <div class="proj-sl__square">1850 м2</div>
+                </div>
+                <div class="proj-sl__desc">
+                  <p>Площадь клуба составляет без малого 1850 м2</p>
+                  <p>Профессиональные тренажеры MATRIX (США) и BRONZE GYM (Германия);</p>
+                </div>
+                <a href="#" class="proj-sl__link show-767">instagramm</a>
+                <a href="#" class="proj-sl__img-w">
+                  <img src="img/proj-sl-1.jpg" class="proj-sl__img">
+                </a>
+              </div><!--proj-sl__slide-->
+              <div class="proj-sl__slide">
+                <div class="proj-sl__top">
+                  <a href="#" class="proj-sl__tit">Фитнес-клуб «Loft Fitness»</a>
+                  <a href="#" class="proj-sl__link hide-767">instagramm</a>
+                  <div class="proj-sl__square">1850 м2</div>
+                </div>
+                <div class="proj-sl__desc">
+                  <p>Площадь клуба составляет без малого 1850 м2</p>
+                  <p>Профессиональные тренажеры MATRIX (США) и BRONZE GYM (Германия);</p>
+                </div>
+                <a href="#" class="proj-sl__link show-767">instagramm</a>
+                <a href="#" class="proj-sl__img-w">
+                  <img src="img/proj-sl-1.jpg" class="proj-sl__img">
+                </a>
+              </div><!--proj-sl__slide-->
+              <div class="proj-sl__slide">
+                <div class="proj-sl__top">
+                  <a href="#" class="proj-sl__tit">Фитнес-клуб «Loft Fitness»</a>
+                  <a href="#" class="proj-sl__link hide-767">instagramm</a>
+                  <div class="proj-sl__square">1850 м2</div>
+                </div>
+                <div class="proj-sl__desc">
+                  <p>Площадь клуба составляет без малого 1850 м2</p>
+                  <p>Профессиональные тренажеры MATRIX (США) и BRONZE GYM (Германия);</p>
+                </div>
+                <a href="#" class="proj-sl__link show-767">instagramm</a>
+                <a href="#" class="proj-sl__img-w">
+                  <img src="img/proj-sl-1.jpg" class="proj-sl__img">
+                </a>
+              </div><!--proj-sl__slide-->            
+            </div><!--proj-sl-->
+          </div>
+        </div>
+
+      </main>
+      <footer class="footer"> 
+
+        <div class="contain">
+          <div class="footer__inn">
+            <a href="#" class="footer__logo"><img src="img/f-logo.png"></a>
+            <div class="footer__time">Будни: c 9:00 до 18:00</div>
+            <div class="footer__phones">
+              <div class="footer__phones-item">
+                <a href="tel:+7 (499) 399-35-16" class="footer__phones-phone">+7 (499) 399-35-16</a>
+                <div class="footer__phones-city">
+                  Москва<br />
+                  Каширское шоссе 19, к.1
+                </div>
+                <a href="#" class="footer__phones-mail">pro@neotren.ru </a>
+              </div>
+
+              <div class="footer__phones-item">
+                <a href="tel:+7 (499) 399-35-16" class="footer__phones-phone">+7 (812) 612-80-65 </a>
+                <div class="footer__phones-city">
+                  Санкт-Петербург<br />
+                  ул. Репищева, 20а, офис 522
+                </div>
+                <a href="#" class="footer__phones-mail">info-spb@neotren.ru</a>
+              </div>
+              <div class="footer__phones-item">
+                <a href="tel:+7 (499) 399-35-16" class="footer__phones-phone">+7 (861) 204-21-31 </a>
+                <div class="footer__phones-city">
+                  Краснодар<br />
+                  ул. Дзержинского, д. 7, офис 702<br />
+                  склад: х. Октябрьский, ул. <br> Живописная, д. 72
+                </div>
+                <a href="#" class="footer__phones-mail">info-kdr@fitathlon.ru </a>
+              </div>     
+            </div>
+          </div>
+        </div>     
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+  </html>
 
