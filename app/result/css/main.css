@@ -1072,7 +1072,7 @@ body {
 .text-red {
   color: #c60c30; }
 
-.open-mnu {
+.open-mnu-w {
   position: absolute;
   right: 0;
   top: 0;
@@ -1096,7 +1096,7 @@ body {
           transform: translate(100%, 0%);
   transition: 0.65s ease-out;
   width: calc(100% - 153px); }
-  .open-mnu.show {
+  .open-mnu-w.show {
     -webkit-transform: translate(0%, 0%);
         -ms-transform: translate(0%, 0%);
             transform: translate(0%, 0%); }
@@ -1870,7 +1870,7 @@ body {
     height: 48px; }
   .burger__line {
     width: 20px; }
-  .open-mnu {
+  .open-mnu-w {
     padding-left: 85px;
     padding-top: 65px; }
   .open-mnu__a {
@@ -2181,7 +2181,7 @@ body {
     margin-top: 42px; }
   .open__phones {
     margin-top: 84px; }
-  .open-mnu {
+  .open-mnu-w {
     padding-top: 35px;
     padding-left: 50px; }
   .open__phones-phone {
@@ -2351,7 +2351,7 @@ body {
     -webkit-transform: translate(-44px, -16px);
         -ms-transform: translate(-44px, -16px);
             transform: translate(-44px, -16px); }
-  .open-mnu {
+  .open-mnu-w {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px; }
@@ -2469,7 +2469,7 @@ body {
   .header .slick-dots,
   .header .slick-next {
     display: none !important; }
-  .open-mnu {
+  .open-mnu-w {
     width: 100%; }
   .open__phones {
     position: relative;

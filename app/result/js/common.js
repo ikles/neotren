@@ -10,15 +10,16 @@ jQuery(document).ready(function( $ ) {
 
 
   $('.burger').click(function () {
-    $('.open').addClass('show');
+    $('.open-mnu-w').addClass('show');
     $('body').addClass('ohi');
   });
 
 
   $('.mnu__close').click(function () {
-    $('.open').removeClass('show');
+    $('.open-mnu-w').removeClass('show');
     $('body').removeClass('ohi');
   });
+
 
   $(".equipment__slider").slick({
     dots: false,
@@ -130,7 +131,7 @@ popup('.link', '.modal-overlay_1', '.modal-close_1');
 $('.equipment__nav-selected')
 
 
-$('.calculate__start, .top__btn').click(function () {
+$('.calculate__start, .top__btn, .open__btn').click(function () {
   $('.calc').addClass('show');
 });
 
