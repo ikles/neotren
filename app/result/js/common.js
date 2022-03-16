@@ -20,7 +20,25 @@ jQuery(document).ready(function( $ ) {
     $('body').removeClass('ohi');
   });
 
+  $(".equipment__slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 3,
+    speed: 1400
+  });
 
+  $(".equipment__nav a").click(function(e){
+    e.preventDefault();
+    slideIndex = $(this).index();
+    $('.equipment__slider').slick('slickGoTo', parseInt(slideIndex))
+  });
+
+  $('.equipment__nav-item').click(function () {
+    $('.equipment__nav-item').removeClass('active');
+    $(this).addClass('active');
+  });
 
 
   if ($('.header__slider').length) {
@@ -73,12 +91,12 @@ jQuery(document).ready(function( $ ) {
 
   /************************************/
 
-/*$('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 $('.eye-3').click(function (e) {
   e.preventDefault();  
   $('body').toggleClass('active');  
 
-});*/
+});
 
 /************************************/
 
@@ -109,18 +127,35 @@ popup('.link2', '.modal-overlay_2', '.modal-close_2');
 popup('.link', '.modal-overlay_1', '.modal-close_1');
 
 
+$('.equipment__nav-selected')
 
 
+$('.calculate__start, .top__btn').click(function () {
+  $('.calc').addClass('show');
+});
 
+
+$('.select-nav').each(function () {
+  const self = $(this);
+  const list = $(this).find('.select-nav__list');
+  const item = list.find('a');
+  const selected = $(this).find('.nav-selected');
+  selected.click(function () {
+    self.toggleClass('open');
+  });
+  item.click(function () {
+    selected.text($(this).find('span').text());
+    self.removeClass('open');
+  });
+})
 
 
 function calc2() {
   let i = 1;
-  const countOfStages = $('.calc__stage').length;
-  
+  const countOfStages = $('.calc__stage').length;  
   $('.calc__nav-btn').click(function () {
     //next
-    if ($(this).hasClass('_next') && i < countOfStages) {
+    if ($(this).hasClass('_next') && i < (countOfStages - 1)) {
       i++;
       $('.calc__stage').hide();
       $('.calc__stage').each(function () {
@@ -128,57 +163,30 @@ function calc2() {
           $(this).fadeIn();
         }
       });
-      console.log(i);
+      $('.calc__nav-btn._prev').addClass('show');
+
+
+      if (i == (countOfStages - 1)) {
+        $('.calc__nav').hide();
+        $('.calc__submit-wrap').addClass('show');
+      }
+      
     }
     //prev
     else if ($(this).hasClass('_prev') && i >= 2) {
-      i--;
+      i--;      
       $('.calc__stage').hide();
       $('.calc__stage').each(function () {
         if ($(this).attr('data-stage') == i) {
           $(this).fadeIn();
         }
       });
-      console.log(i);
+      if (i == 1) {
+        $('.calc__nav-btn._prev').removeClass('show');
+      }                    
     }
   });
 
-}
-
-calc2();
-
-
-function calc() {
-  let i = 1;
-  $('.calc__nav-btn._next').click(function () {
-    //console.log('next' + (i + 1));
-    if (i < $('.calc__stage').length) {
-      $('.calc__stage').hide();
-      let stage = ('.calc__stage-' + (i + 1));    
-      $(stage).fadeIn(800);
-      i++;      
-      $('.calc__nav-btn._prev').addClass('show');
-      if (i == $('.calc__stage').length - 1) {        
-        $('.calc__nav').hide();
-        $('.calc__submit-wrap').addClass('show');        
-      }      
-    }    
-  });
-
-  $('.calc__nav-btn._prev').click(function () {
-    //console.log('prev' + (i - 1));
-    if (i > 1) {
-      i--;      
-      let stage = ('.calc__stage-' + (i));
-      $('.calc__stage').hide();      
-      $(stage).fadeIn(800);      
-      $('.calc__nav-btn._next').show();
-      $('.calc__submit-wrap').removeClass('show');      
-    }
-    if (i == 1) {
-      $('.calc__nav-btn._prev').removeClass('show');
-    }
-  });
 
   $('.calc__submit').click(function (e) {
     e.preventDefault();
@@ -188,6 +196,7 @@ function calc() {
     setTimeout(function () {
       $('.calc').removeClass('show');
       $('.calc__stage-final').fadeOut();
+      $('.calc__nav-btn._prev').removeClass('show');
       $('.calc__stage-1').fadeIn();
       $('.calc__form').get(0).reset();
       $('.calc__nav').addClass('show').attr('style','');
@@ -196,17 +205,18 @@ function calc() {
 
     }, 1500);
 
-  });   
-  $('.calc__close').click(function () {
-    $('.calc').removeClass('show');
   });
 
 }
 
-//calc();
+calc2();
 
-$('.calculate__start').click(function () {
-  $('.calc').addClass('show');
+
+
+
+
+$('.calc__close').click(function () {
+  $('.calc').removeClass('show');
 });
 
 
