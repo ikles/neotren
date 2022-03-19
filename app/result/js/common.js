@@ -6,6 +6,7 @@ jQuery(document).ready(function( $ ) {
       $(".toggle-mnu").removeClass("on");
       $(".top-mnu").fadeOut();
     }
+    $('.select-nav').removeClass('open');
   });
 
 
@@ -21,6 +22,9 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+  $('.select-nav').click(function (e) {
+    e.stopPropagation();  
+  });
 
 
 
@@ -32,10 +36,10 @@ jQuery(document).ready(function( $ ) {
     slidesToShow: 1,
     speed: 200,
     swipe: false,     
-    cssEase: 'ease-in-out'
+    cssEase: 'ease'
   });
 
-  $(".showrooms__actions li").click(function(e){
+  $(".showrooms__actions a").click(function(e){
     e.preventDefault();
     $(this).addClass('active')
     .siblings()
@@ -45,7 +49,25 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-  
+  $(".openclub__slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 1,
+    speed: 600,
+    swipe: false,     
+    cssEase: 'ease'
+  });
+
+  $(".openclub__actions li").click(function(e){
+    e.preventDefault();
+    $(this).addClass('active')
+    .siblings()
+    .removeClass('active');
+    slideIndex = $(this).index();
+    $('.openclub__slider').slick('slickGoTo', parseInt(slideIndex))
+  });
 
 
 
@@ -55,7 +77,16 @@ jQuery(document).ready(function( $ ) {
     slidesToScroll: 1,
     autoplay: false,    
     slidesToShow: 3,
-    speed: 1400
+    speed: 600,
+    responsive: [
+
+    {
+      breakpoint: 641,
+      settings: {
+        slidesToShow: 2
+      }
+    },    
+    ]
   });
 
 
@@ -151,13 +182,14 @@ jQuery(document).ready(function( $ ) {
       e.stopPropagation();  
     });
 
+
   }
 
   popup('.link2', '.modal-overlay_2', '.modal-close_2');
   popup('.link', '.modal-overlay_1', '.modal-close_1');
 
 
-  $('.equipment__nav-selected');
+  
 
 
   $('.calculate__start, .top__btn, .open__btn').click(function () {
@@ -170,11 +202,14 @@ jQuery(document).ready(function( $ ) {
     const list = $(this).find('.select-nav__list');
     const item = list.find('a');
     const selected = $(this).find('.nav-selected');
+    const selected_span = $(this).find('.nav-selected span');
+    
     selected.click(function () {
       self.toggleClass('open');
     });
+
     item.click(function () {
-      selected.text($(this).find('span').text());
+      selected_span.text($(this).find('span').text());
       self.removeClass('open');
     });
   })
@@ -254,7 +289,7 @@ jQuery(document).ready(function( $ ) {
   $('a[href*=\\#]:not([href=\\#])').click(function () {
     elementClick = $(this).attr("href");
     destination = $(elementClick).offset().top;
-    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 85}, 1100);
+    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 0}, 1100);
     return false;
   });
 
