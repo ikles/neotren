@@ -1128,8 +1128,8 @@ height: 316px;
 overflow: hidden;
 img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 101%;
+  height: 101%;
 }
 }
 .op__row-1 {
@@ -1309,6 +1309,9 @@ margin-bottom: 20px;
     height: 100%;
   }
 }
+.header, .header__slide, .header__slider {
+  height: 568px;
+}
 }
 
 
@@ -1446,7 +1449,9 @@ margin-bottom: 20px;
 .nav-selected span {
   width: calc(100% - 10px);
 }
-
+.mnu__close {
+  margin-top: -10px;
+}
 }
 
 @media only screen and (max-width : 375px) {

@@ -1,62 +1,3 @@
-'use strict';
-window.addEventListener('DOMContentLoaded', () => {
-
-  function submitForm(formClass) {
-
-    const form = document.querySelector(formClass);
-    const row = form.querySelector('.snform__row');    
-
-    form.addEventListener('submit', formSend);
-    async function formSend(e) {
-      e.preventDefault();      
-      let error = formValidate(form);
-
-      if (error === 0) {
-
-      //Отправить форму
-    }
-    else {
-
-    }
-  }
-
-  function formValidate(form) {
-    let error = 0;
-    let formReq = form.querySelectorAll('._req');
-
-    for (let index = 0; index < formReq.length; index++) {
-      const input = formReq[index];
-      formRemoveError(input);            
-      if (input.getAttribute("type") === "text" && input.value === '') {
-        formAddError(input);        
-        error++;
-      }      
-      else if ( input.getAttribute("type") === "checkbox" && input.checked === false ) {
-        formAddError(input);
-
-        error++;
-      }
-    }
-    return error;
-  }
-
-
-  function formAddError(input) {
-    input.parentElement.classList.add('_error');
-    input.classList.add('_error');
-  }
-
-  function formRemoveError(input) {
-    input.parentElement.classList.remove('_error');
-    input.classList.remove('_error');
-  }
-}
-
-submitForm('.getcat__form');
-
-
-});
-
 jQuery(document).ready(function( $ ) {
 
 
@@ -228,12 +169,12 @@ jQuery(document).ready(function( $ ) {
 
   /************************************/
 
-  $('.wrapper').prepend('<span class="eye-3"></span>');
+/*  $('.wrapper').prepend('<span class="eye-3"></span>');
   $('.eye-3').click(function (e) {
     e.preventDefault();  
     $('body').toggleClass('active');  
 
-  });
+  });*/
 
   /************************************/
 
@@ -445,6 +386,72 @@ $('.animate').each(function () {
 });  
 
 
+$('img.lazy').lazy({
+    effect: "fadeIn",
+    effectTime: 200,
+    threshold: 0,  
+  });
 
 }); //ready
 
+
+
+
+'use strict';
+window.addEventListener('DOMContentLoaded', () => {
+
+  function submitForm(formClass) {
+
+    const form = document.querySelector(formClass);
+    const row = form.querySelector('.snform__row');    
+
+    form.addEventListener('submit', formSend);
+    async function formSend(e) {
+      e.preventDefault();      
+      let error = formValidate(form);
+
+      if (error === 0) {
+
+      //Отправить форму
+    }
+    else {
+
+    }
+  }
+
+  function formValidate(form) {
+    let error = 0;
+    let formReq = form.querySelectorAll('._req');
+
+    for (let index = 0; index < formReq.length; index++) {
+      const input = formReq[index];
+      formRemoveError(input);            
+      if (input.getAttribute("type") === "text" && input.value === '') {
+        formAddError(input);        
+        error++;
+      }      
+      else if ( input.getAttribute("type") === "checkbox" && input.checked === false ) {
+        formAddError(input);
+
+        error++;
+      }
+    }
+    return error;
+  }
+
+
+  function formAddError(input) {
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
+  }
+
+  function formRemoveError(input) {
+    input.parentElement.classList.remove('_error');
+    input.classList.remove('_error');
+  }
+}
+
+submitForm('.getcat__form');
+
+
+});

@@ -100,7 +100,13 @@
       </div>
       <div class="header__slider">
         <div class="header__slide">
-          <img alt="image" title="image" src="img/banner-1.jpg" class="header__slide-img" />
+
+
+          <picture>
+            <source class="lazy" srcset="img/banner-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+            <source class="lazy" srcset="img/banner-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+            <img alt="image" title="image" src="img/banner-1.jpg" class="lazy header__slide-img" /> 
+          </picture>
           <div class="header__slide-text-wrap">
             <div class="contain">
               <div class="header__slide-text animate slLeft">
@@ -111,9 +117,12 @@
             </div>
           </div>
         </div>
-        <div class="header__slide">
-          <img alt="image" title="image" src="img/banner-2.jpg" class="header__slide-img" />
-          <div class="header__slide-text-wrap">
+        <div class="header__slide">          
+          <picture>
+            <source class="lazy" srcset="img/banner-2.jpg" type="image/jpeg" media="(min-width:575px)" />
+            <source class="lazy" srcset="img/banner-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+            <img alt="image" title="image" src="img/banner-2.jpg" class="lazy header__slide-img" /> 
+          </picture>2          <div class="header__slide-text-wrap">
             <div class="contain">
               <div class="header__slide-text">
                 Комплексные <br />
@@ -124,7 +133,11 @@
           </div>
         </div> 
         <div class="header__slide">
-          <img alt="image" title="image" src="img/banner-1.jpg" class="header__slide-img" />
+          <picture>
+            <source class="lazy" srcset="img/banner-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+            <source class="lazy" srcset="img/banner-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+            <img alt="image" title="image" src="img/banner-1.jpg" class="lazy header__slide-img" /> 
+          </picture>
           <div class="header__slide-text-wrap">
             <div class="contain">
               <div class="header__slide-text">
@@ -136,7 +149,11 @@
           </div>
         </div>
         <div class="header__slide">
-          <img alt="image" title="image" src="img/banner-2.jpg" class="header__slide-img" />
+          <picture>
+            <source class="lazy" srcset="img/banner-2.jpg" type="image/jpeg" media="(min-width:575px)" />
+            <source class="lazy" srcset="img/banner-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+            <img alt="image" title="image" src="img/banner-2.jpg" class="lazy header__slide-img" /> 
+          </picture>
           <div class="header__slide-text-wrap">
             <div class="contain">
               <div class="header__slide-text">
@@ -166,7 +183,15 @@
             </div>
             <div class="op__r">
               <div class="op__r-img-w animate slLeft delay-08">
-                <img alt="image" title="image" src="img/op.jpg" class="op__r-img" />
+
+
+
+                <picture>
+                  <source class="lazy" srcset="img/op.jpg" type="image/jpeg" media="(min-width:575px)" />
+                  <source class="lazy" srcset="img/op-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                  <img alt="image" title="image" src="img/op.jpg" class="lazy op__r-img" />
+                </picture>
+
               </div>
               <div class="op__r-desc animate slLeft delay-12">
                 Запустим любой проект: от небольших корпоративных залов до крупных фитнесов-клубов. Наличие своего склада позволяет нашим клиентам сэкономить время, деньги и заказать все необходимое в одном месте.
@@ -176,7 +201,7 @@
           <div class="accord">
             <div class="accord__l">
               <div class="accord__img-w">
-                <img alt="image" title="image" src="img/op-sm.jpg" class="accord__img" />
+                <img alt="image" title="image" src="img/op-sm.jpg" class="lazy accord__img" />
               </div>
             </div>
             <div class="accord__accord">
@@ -207,7 +232,7 @@
               <a href="#" class="equipment__nav-item active">
                 <span class="equipment__nav-text">Кардиотренажеры</span><sup>350</sup>
               </a>
-              <a href="#" class="equipment__nav-item"><span class="equipment__nav-text">Свободное железо</span><sup>350</sup>
+              <a href="#" class="equipment__nav-item"><span class="equipment__nav-text">Свободные веса</span><sup>350</sup>
               </a>
               <a href="#" class="equipment__nav-item"><span class="equipment__nav-text">Силовые тренажеры</span><sup>350</sup></a>
               <a href="#" class="equipment__nav-item"><span class="equipment__nav-text">Функциональный и групповой тренинг</span><sup>350</sup></a>
@@ -218,433 +243,419 @@
           <div class="equipment__slider-w animate slBot delay-08">
             <div class="equipment__slider">
               <a href="#" class="equipment__slider-it">
-                <span class="equipment__img-w"><img alt="image" title="image" src="img/fit-eq-1.png" /></span>
+                <span class="equipment__img-w">                  
+
+                  <picture>
+                    <source class="lazy" srcset="img/fit-eq-1.png" type="image/jpeg" media="(min-width:575px)" />
+                    <source class="lazy" srcset="img/fit-eq-1-pda.png" type="image/jpeg" media="(min-width:200px)" />
+                    <img alt="image" title="image" src="img/fit-eq-1.png" />
+                  </picture>
+
+                </span>
                 <span class="equipment__slider-link">
                   Кардиотренажеры
                 </span>
               </a>
               <a href="#" class="equipment__slider-it">
-                <span class="equipment__img-w"><img alt="image" title="image" src="img/fit-eq-2.png" /></span>
-                <span class="equipment__slider-link">
-                  Свободные веса
-                </span>
-              </a>
-              <a href="#" class="equipment__slider-it">
-                <span class="equipment__img-w"><img alt="image" title="image" src="img/fit-eq-3.png" /></span>
-                <span class="equipment__slider-link">
-                  Силовые тренажеры
-                </span>
-              </a>
-              <a href="#" class="equipment__slider-it">
-                <span class="equipment__img-w"><img alt="image" title="image" src="img/fit-eq-2.png" /></span>
-                <span class="equipment__slider-link">
-                  Групповой тренинг
-                </span>
-              </a>
-              <a href="#" class="equipment__slider-it">
-                <span class="equipment__img-w"><img alt="image" title="image" src="img/fit-eq-3.png" /></span>
-                <span class="equipment__slider-link">
-                  Допоборудование
-                </span>
-              </a>
-              <a href="#" class="equipment__slider-it">
-                <span class="equipment__img-w"><img alt="image" title="image" src="img/fit-eq-3.png" /></span>
-                <span class="equipment__slider-link">
-                  Распродажа
-                </span>
-              </a>
-            </div>
-          </div>
+                <span class="equipment__img-w">
+                 <picture>
+                  <source class="lazy" srcset="img/fit-eq-2.png" type="image/jpeg" media="(min-width:575px)" />
+                  <source class="lazy" srcset="img/fit-eq-2-pda.png" type="image/jpeg" media="(min-width:200px)" />
+                  <img class="lazy" alt="image" title="image" src="img/fit-eq-2.png" />
+                </picture>
+              </span>
+              <span class="equipment__slider-link">
+                Свободные веса
+              </span>
+            </a>
+            <a href="#" class="equipment__slider-it">
+              <span class="equipment__img-w">
+               <picture>
+                <source class="lazy" srcset="img/fit-eq-3.png" type="image/jpeg" media="(min-width:575px)" />
+                <source class="lazy" srcset="img/fit-eq-3-pda.png" type="image/jpeg" media="(min-width:200px)" />
+                <img alt="image" title="image" src="img/fit-eq-3.png" />
+              </picture>
+            </span>
+            <span class="equipment__slider-link">
+              Силовые тренажеры
+            </span>
+          </a>
+          <a href="#" class="equipment__slider-it">
+            <span class="equipment__img-w">                  
+             <picture>
+              <source class="lazy" srcset="img/fit-eq-2.png" type="image/jpeg" media="(min-width:575px)" />
+              <source class="lazy" srcset="img/fit-eq-2-pda.png" type="image/jpeg" media="(min-width:200px)" />
+              <img class="lazy" alt="image" title="image" src="img/fit-eq-2.png" />
+            </picture>
+          </span>
+          <span class="equipment__slider-link">
+            Групповой тренинг
+          </span>
+        </a>
+        <a href="#" class="equipment__slider-it">
+          <span class="equipment__img-w">
+           <picture>
+            <source class="lazy" srcset="img/fit-eq-3.png" type="image/jpeg" media="(min-width:575px)" />
+            <source class="lazy" srcset="img/fit-eq-3-pda.png" type="image/jpeg" media="(min-width:200px)" />
+            <img alt="image" title="image" src="img/fit-eq-3.png" />
+          </picture>
+        </span>
+        <span class="equipment__slider-link">
+          Допоборудование
+        </span>
+      </a>
+      <a href="#" class="equipment__slider-it">
+        <span class="equipment__img-w">
+         <picture>
+          <source class="lazy" srcset="img/fit-eq-2.png" type="image/jpeg" media="(min-width:575px)" />
+          <source class="lazy" srcset="img/fit-eq-2-pda.png" type="image/jpeg" media="(min-width:200px)" />
+          <img class="lazy" alt="image" title="image" src="img/fit-eq-2.png" />
+        </picture>
+      </span>
+      <span class="equipment__slider-link">
+        Распродажа
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+</div><!---->
+
+<div class="getcat">
+  <div class="contain">
+    <div class="getcat__tit">Получить каталог</div>          
+
+    <form class="getcat__form">
+      <div class="getcat__form-inn">
+        <div class="getcat__form-col">
+          <input class="getcat__input _req" type="text" placeholder="Ваше имя" name="name" />
+          <div class="getcat__form-error">Сообщение ошибки</div>
         </div>
-      </div><!---->
-
-      <div class="getcat">
-        <div class="contain">
-          <div class="getcat__tit">Получить каталог</div>          
-          
-          <form class="getcat__form">
-            <div class="getcat__form-inn">
-              <div class="getcat__form-col">
-                <input class="getcat__input _req" type="text" placeholder="Ваше имя" name="name" />
-                <div class="getcat__form-error">Сообщение ошибки</div>
-              </div>
-              <div class="getcat__form-col">
-                <input class="getcat__input _req" type="text" placeholder="E-mail" name="mail" />
-                <div class="getcat__form-error">Сообщение ошибки</div>
-              </div>
-              <div class="getcat__form-col">
-                <input class="getcat__input _req" type="text" placeholder="Телефон" name="phone" />
-                <div class="getcat__form-error">Сообщение ошибки</div>
-              </div>
-              <div class="getcat__form-col">
-                <button class="getcat__btn">Отправить</button>
-              </div>
-            </div>  
-
-            <div class="getcat__checkboxes" data-da=".getcat__form-inn,767,3">
-              <label class="getcat__checkbox-lbl">
-                <input type="checkbox" class="" name="onwatsupp">
-                <span></span>
-                <span class="getcat__checkbox-text">в Whatsapp</span>
-              </label>
-
-              <label class="getcat__checkbox-lbl">
-                <input type="checkbox" class="" name="onmail">
-                <span></span>
-                <span class="getcat__checkbox-text">на почту</span>
-              </label>
-            </div>
-          </form>          
+        <div class="getcat__form-col">
+          <input class="getcat__input _req" type="text" placeholder="E-mail" name="mail" />
+          <div class="getcat__form-error">Сообщение ошибки</div>
         </div>
-      </div><!--getcat-->
-
-      <div class="whywe" id="whywe">
-        <div class="contain">
-          <div class="whywe__heading heading-2 animate slLeft">Почему Мы</div>
-          <div class="whywe__items">
-            <div class="whywe__item animate slBot delay-06">
-              <div class="whywe__num">
-                <div class="whywe__dot"></div>
-                <div class="whywe__num-w">25 <span class="whywe__num-text">лет</span></div>
-              </div>
-              <div class="whywe__text">Москва, Санкт-Петербург, Краснодар готовы помочь вам в запуске проекта</div>
-            </div>
-            <div class="whywe__item animate slBot delay-08">
-              <div class="whywe__num">
-                <div class="whywe__dot"></div>
-                <div class="whywe__num-w">378 <span class="whywe__num-text">фитнес-клубов</span></div>
-              </div>
-              <div class="whywe__text">Москва, Санкт-Петербург, Краснодар готовы помочь вам в запуске проекта</div>
-            </div>
-            <div class="whywe__item animate slBot delay-10">
-              <div class="whywe__num">
-                <div class="whywe__dot"></div>
-                <div class="whywe__num-w">142 <span class="whywe__num-text">сотрудника</span></div>
-              </div>
-              <div class="whywe__text">Москва, Санкт-Петербург, Краснодар готовы помочь вам в запуске проекта</div>
-            </div>
-            <div class="whywe__item animate slBot delay-12">
-              <div class="whywe__num">
-                <div class="whywe__dot"></div>
-                <div class="whywe__num-w">12 000 <span class="whywe__num-text">м2 </span></div>
-              </div>
-              <div class="whywe__text">Складов обеспечивают наличие необходимого оборудования и гарантируют сохранность первоначальной цены</div>
-            </div>
-          </div>
+        <div class="getcat__form-col">
+          <input class="getcat__input _req" type="text" placeholder="Телефон" name="phone" />
+          <div class="getcat__form-error">Сообщение ошибки</div>
         </div>
-      </div><!--whywe-->
-
-      <div class="advantages" id="advantages">
-        <div class="contain">
-          <div class="advantages__w">
-            <div class="advantages__heading heading-2 animate slBot">Преимущества<div class="text-red">PRO.Neotren</div>
-          </div>
-          <div class="advantages__text animate slBot delay-08">Создаем уникальную среду для тренировок с отражением духа клуба <br> и стремлений вашего бизнеса. Подберем оборудование для фитнес-центра, используя комплексный <br> подход к проектированию клуба, сочетающего в себе занятия в тренажерном зале, различные групповые тренировки, фитнес-тестирование и зоны спа.</div>
-          <div class="advantages__img-w" data-da=".advantages__img-w-2,768">
-            <img alt="image" title="image" src="img/adv.jpg" class="advantages__img">
-          </div>
+        <div class="getcat__form-col">
+          <button class="getcat__btn">Отправить</button>
         </div>
+      </div>  
+
+      <div class="getcat__checkboxes" data-da=".getcat__form-inn,767,3">
+        <label class="getcat__checkbox-lbl">
+          <input type="checkbox" class="" name="onwatsupp">
+          <span></span>
+          <span class="getcat__checkbox-text">в Whatsapp</span>
+        </label>
+
+        <label class="getcat__checkbox-lbl">
+          <input type="checkbox" class="" name="onmail">
+          <span></span>
+          <span class="getcat__checkbox-text">на почту</span>
+        </label>
       </div>
-    </div><!--advantages-->
-    <div class="marquee marquee-1">
-      <ul class="marquee__ul">
-        <li class="marquee__li">Профессиональный монтаж и настройка</li>
-        <li class="marquee__li">Профессиональный монтаж и настройка</li>
-        <li class="marquee__li">Сервисная поддержка 24 часа в сутки</li>
-        <li class="marquee__li">Гарантия от производителя</li>
-        <li class="marquee__li">Зонирование и подбор оборудования</li>
+    </form>          
+  </div>
+</div><!--getcat-->
+
+<div class="whywe" id="whywe">
+  <div class="contain">
+    <div class="whywe__heading heading-2 animate slLeft">Почему Мы</div>
+    <div class="whywe__items">
+      <div class="whywe__item animate slBot delay-06">
+        <div class="whywe__num">
+          <div class="whywe__dot"></div>
+          <div class="whywe__num-w">25 <span class="whywe__num-text">лет</span></div>
+        </div>
+        <div class="whywe__text">Москва, Санкт-Петербург, Краснодар готовы помочь вам в запуске проекта</div>
+      </div>
+      <div class="whywe__item animate slBot delay-08">
+        <div class="whywe__num">
+          <div class="whywe__dot"></div>
+          <div class="whywe__num-w">378 <span class="whywe__num-text">фитнес-клубов</span></div>
+        </div>
+        <div class="whywe__text">Москва, Санкт-Петербург, Краснодар готовы помочь вам в запуске проекта</div>
+      </div>
+      <div class="whywe__item animate slBot delay-10">
+        <div class="whywe__num">
+          <div class="whywe__dot"></div>
+          <div class="whywe__num-w">142 <span class="whywe__num-text">сотрудника</span></div>
+        </div>
+        <div class="whywe__text">Москва, Санкт-Петербург, Краснодар готовы помочь вам в запуске проекта</div>
+      </div>
+      <div class="whywe__item animate slBot delay-12">
+        <div class="whywe__num">
+          <div class="whywe__dot"></div>
+          <div class="whywe__num-w">12 000 <span class="whywe__num-text">м2 </span></div>
+        </div>
+        <div class="whywe__text">Складов обеспечивают наличие необходимого оборудования и гарантируют сохранность первоначальной цены</div>
+      </div>
+    </div>
+  </div>
+</div><!--whywe-->
+
+<div class="advantages" id="advantages">
+  <div class="contain">
+    <div class="advantages__w">
+      <div class="advantages__heading heading-2 animate slBot">Преимущества<div class="text-red">PRO.Neotren</div>
+    </div>
+    <div class="advantages__text animate slBot delay-08">Создаем уникальную среду для тренировок с отражением духа клуба <br> и стремлений вашего бизнеса. Подберем оборудование для фитнес-центра, используя комплексный <br> подход к проектированию клуба, сочетающего в себе занятия в тренажерном зале, различные групповые тренировки, фитнес-тестирование и зоны спа.</div>
+    <div class="advantages__img-w" data-da=".advantages__img-w-2,768">
+
+     <picture>
+      <source class="lazy" srcset="img/adv.jpg" type="image/jpeg" media="(min-width:575px)" />
+      <source class="lazy" srcset="img/adv-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+      <img alt="image" title="image" src="img/adv.jpg" class="lazy advantages__img">
+    </picture>
+  </div>
+</div>
+</div>
+</div><!--advantages-->
+<div class="marquee marquee-1">
+  <ul class="marquee__ul">
+    <li class="marquee__li">Профессиональный монтаж и настройка</li>
+    <li class="marquee__li">Быстрая и безопасная доставка</li>
+    <li class="marquee__li">Сервисная поддержка 24 часа в сутки</li>
+    <li class="marquee__li">Гарантия от производителя</li>
+    <li class="marquee__li">Зонирование и подбор оборудования</li>
+    <li class="marquee__li">Обучение вашего персонала</li>
+    <li class="marquee__li">Собственный склад площадью 12 000 м2</li>
+    <li class="marquee__li">Запуск проектов под ключ, начиная с концепции</li>
+  </ul>
+</div><!--marquee-->
+<div class="advantages__img-w-2"></div>
+<div class="showrooms" id="showrooms">
+  <div class="contain">
+    <div class="showrooms__heading heading-2 animate slLeft">Наши шоурумы</div>
+    <div class="tabs tabs-1 animate slLeft">
+      <div class="select-nav _dark">
+        <div class="nav-selected">
+          <span>Москва</span>  
+        </div>
+
+        <ul class="showrooms__actions tab__list select-nav__list">
+          <a href="#" class="showrooms__action tab__list-item active"><span>Москва</span></a>
+          <a href="#" class="showrooms__action tab__list-item"><span>Санкт-Петербург</span></a>
+          <a href="#" class="showrooms__action tab__list-item"><span>Краснодар</span></a>
+        </ul> 
+
+
+      </div><!--select-nav-->
+    </div>
+  </div>
+
+  <div class="showrooms__contain lcpadding">
+    <div class="tabs__content-w  animate slLeft delay-10">          
+      <ul class="tabs__content">          
+        <li class="showrooms__tab tabs__content-item active">
+          <div class="showrooms__slider">
+            <div class="showrooms__item">
+              <div class="showrooms__img-w">                
+                <picture>
+                  <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                  <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                  <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+                </picture>
+              </div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Москва, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+            <div class="showrooms__item">
+              <div class="showrooms__img-w">
+                <picture>
+                  <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                  <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                  <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+                </picture>
+              </div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Москва, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+            <div class="showrooms__item">
+              <div class="showrooms__img-w">
+                <picture>
+                  <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                  <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                  <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+                </picture>
+              </div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Москва, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="showrooms__tab tabs__content-item">
+          <div class="showrooms__slider">
+            <div class="showrooms__item">
+              <div class="showrooms__img-w">
+                <picture>
+                  <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                  <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                  <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+                </picture>
+              </div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Санкт-Петербург, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+            <div class="showrooms__item">
+              <div class="showrooms__img-w">
+                <picture>
+                  <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                  <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                  <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+                </picture>
+              </div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Санкт-Петербург, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+            <div class="showrooms__item">
+              <div class="showrooms__img-w">
+                <picture>
+                  <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                  <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                  <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+                </picture>
+              </div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Санкт-Петербург, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="showrooms__tab tabs__content-item">
+          <div class="showrooms__slider">
+            <div class="showrooms__item">
+              <div class="showrooms__img-w"><picture>
+                <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+              </picture></div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Краснодар, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+            <div class="showrooms__item">
+              <div class="showrooms__img-w"><picture>
+                <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+              </picture></div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Краснодар, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+            <div class="showrooms__item">
+              <div class="showrooms__img-w"><picture>
+                <source class="lazy" srcset="img/showroom-1.jpg" type="image/jpeg" media="(min-width:575px)" />
+                <source class="lazy" srcset="img/showroom-1-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+                <img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" />
+              </picture></div>
+              <div class="showrooms__info">
+                <div class="showrooms__adress">Краснодар, м. Трубная</div>
+                <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
+                <a href="#" class="showrooms__signup">
+                  Записаться
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
-    </div><!--marquee-->
-    <div class="advantages__img-w-2"></div>
-    <div class="showrooms" id="showrooms">
-      <div class="contain">
-        <div class="showrooms__heading heading-2 animate slLeft">Наши шоурумы</div>
-        <div class="tabs tabs-1 animate slLeft">
-          <div class="select-nav _dark">
-            <div class="nav-selected">
-              <span>Москва</span>  
-            </div>
-
-            <ul class="showrooms__actions tab__list select-nav__list">
-              <a href="#" class="showrooms__action tab__list-item active"><span>Москва</span></a>
-              <a href="#" class="showrooms__action tab__list-item"><span>Санкт-Петербург</span></a>
-              <a href="#" class="showrooms__action tab__list-item"><span>Краснодар</span></a>
-            </ul> 
+    </div>        
 
 
-          </div><!--select-nav-->
-        </div>
+  </div>
+</div><!--showrooms-->
+
+<div class="marquee marquee-2">
+  <ul class="marquee__ul">
+    <li class="marquee__li">Протестировать тренажеры лично</li>
+    <li class="marquee__li">Сравнить функциональность тренажеров</li>
+    <li class="marquee__li">Проконсультироваться</li>    
+    <li class="marquee__li">Увидеть износ оборудования спустя реальный срок эксплуатации</li>
+    <li class="marquee__li">Получить отзыв от руководителя фитнес-клуба и тренера об оборудовании</li>        
+  </ul>
+</div><!--marquee-2-->
+
+<div class="openclub" id="openclub">
+  <div class="marquee__heading heading-2 show-991">Открытие <br class="show-640"> фитнес-клуба</div>
+  <div class="marquee marquee-3 openclub__marquee">
+    <div class="openclub__marquee-inn">
+      <div class="openclub__tit">Открытие фитнес-клуба</div>
+      <div class="openclub__tit-2">Открытие фитнес-клуба</div>
+    </div>
+  </div>      
+
+
+
+
+
+
+  <div class="contain">
+    <div class="select-nav _dark openclub__actions-w">
+      <div class="nav-selected">
+        <span>150 м2</span>  
       </div>
-
-      <div class="showrooms__contain lcpadding">
-        <div class="tabs__content-w  animate slLeft delay-10">          
-          <ul class="tabs__content">          
-            <li class="showrooms__tab tabs__content-item active">
-              <div class="showrooms__slider">
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Москва, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Москва, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Москва, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="showrooms__tab tabs__content-item">
-              <div class="showrooms__slider">
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Санкт-Петербург, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Санкт-Петербург, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Санкт-Петербург, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="showrooms__tab tabs__content-item">
-              <div class="showrooms__slider">
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Краснодар, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Краснодар, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-                <div class="showrooms__item">
-                  <div class="showrooms__img-w"><img alt="image" title="image" src="img/showroom-1.jpg" class="showrooms__img" /></div>
-                  <div class="showrooms__info">
-                    <div class="showrooms__adress">Краснодар, м. Трубная</div>
-                    <a href="tel:+7 (499) 399-35-16" class="showrooms__phone">+7 (499) 399-35-16 </a>
-                    <a href="#" class="showrooms__signup">
-                      Записаться
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>        
-
-
-      </div>
-    </div><!--showrooms-->
-
-    <div class="marquee marquee-2">
-      <ul class="marquee__ul">
-        <li class="marquee__li">Проконсультироваться</li>
-        <li class="marquee__li">Увидеть износ оборудования спустя реальный срок эксплуатации</li>
-        <li class="marquee__li">Получить отзыв от руководителя фитнес-клуба и тренера об оборудовании</li>        
+      <ul class="tab__list openclub__actions select-nav__list">
+        <a class="tab__list-item active"><span>150 м2</span></a>
+        <a class="tab__list-item "><span>400 м2</span></a>
+        <a class="tab__list-item "><span>800 м2</span></a>
+        <a class="tab__list-item "><span>1500м2 и более</span></a>
       </ul>
-    </div><!--marquee-2-->
-
-    <div class="openclub" id="openclub">
-      <div class="marquee__heading heading-2 show-991">Открытие <br class="show-640"> фитнес-клуба</div>
-      <div class="marquee marquee-3 openclub__marquee">
-        <div class="openclub__marquee-inn">
-          <div class="openclub__tit">Открытие фитнес-клуба</div>
-          <div class="openclub__tit-2">Открытие фитнес-клуба</div>
-        </div>
-      </div>      
+    </div>
+  </div>
 
 
-
-
-
-
-      <div class="contain">
-        <div class="select-nav _dark openclub__actions-w">
-          <div class="nav-selected">
-            <span>150 м2</span>  
-          </div>
-          <ul class="tab__list openclub__actions select-nav__list">
-            <a class="tab__list-item active"><span>150 м2</span></a>
-            <a class="tab__list-item "><span>400 м2</span></a>
-            <a class="tab__list-item "><span>800 м2</span></a>
-            <a class="tab__list-item "><span>1500м2 и более</span></a>
-          </ul>
-        </div>
-      </div>
-
-
-      <div class="openclub__slider">
-        <div class="openclub__slide">        
-          <div class="openclub__tabs-control-w">
-            <ul class="tab__list openclub__tabs-control">
-              <li class="tab__list-item active">Neotren Pro</li>
-              <li class="tab__list-item">Самостоятельно</li>          
-            </ul>       
-          </div>
-          <div class="openclub__items">
-            <div class="openclub__it active animate slLeft delay-09">
-              <div class="openclub__it-inn">
-                <div class="openclub__it-tit">Neotren Pro</div>
-                <div class="openclub__price">от <span>800 000₽</span></div>
-                <div class="openclub__text">Готовый к работе фитнес-клуб, оснащенный проверенным и качественным оборудованием, а также комплекс услуг по оптимизации бизнеса.</div>
-                <ul class="openclub__list">
-                  <li class="openclub__list-item">
-                    Рассказываете о целях, мы разрабатываем план проекта
-                  </li>
-                  <li class="openclub__list-item">
-                    Принимаете решения о зонировании, выбирая по нашим 3d-моделям, мы индивидуально подбираем оборудование
-                  </li>
-                  <li class="openclub__list-item">
-                    Получаете консультацию по развитию и поддержке бизнеса
-                  </li>
-                  <li class="openclub__list-item">
-                    Принимаете решения о принятии на работу персонала, который мы подобрали специально для вас и обучили
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="openclub__it animate slLeft delay-12">
-              <div class="openclub__it-inn">
-                <div class="openclub__it-tit">Самостоятельно</div>
-                <div class="openclub__price">от <span>800 000₽</span></div>
-                <div class="openclub__text">
-                  Риски недополучения дохода <span>Вы можете получить проект, оснащенный оборудованием и готовый к работе, но без грамотного зонирования и комплекса услуг он не сможет приносить вам максимальный
-                  доход.</span>
-                </div>
-                <ul class="openclub__list">
-                  <li class="openclub__list-item">
-                    Изучаете все процессы по этапам работ и запуску проекта
-                  </li>
-                  <li class="openclub__list-item">
-                    Подбираете оборудование в соответствии с зонированием пространства и потребностями посетителей
-                  </li>
-                  <li class="openclub__list-item">
-                    Договориваетесь о доставке и монтаже оборудования
-                  </li>
-                  <li class="openclub__list-item">
-                    Подбираете оборудование в соответствии с зонированием пространства и потребностями посетителей
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div><!--openclub__items-->
-        </div>
-        <div class="openclub__slide">
-         <div class="openclub__tabs-control-w">
-          <ul class="tab__list openclub__tabs-control">
-            <li class="tab__list-item active">Neotren Pro</li>
-            <li class="tab__list-item">Самостоятельно</li>          
-          </ul>       
-        </div>
-        <div class="openclub__items">
-          <div class="openclub__it active">
-            <div class="openclub__it-inn">
-              <div class="openclub__it-tit">Neotren Pro</div>
-              <div class="openclub__price">от <span>800 000₽</span></div>
-              <div class="openclub__text">Готовый к работе фитнес-клуб, оснащенный проверенным и качественным оборудованием, а также комплекс услуг по оптимизации бизнеса.</div>
-              <ul class="openclub__list">
-                <li class="openclub__list-item">
-                  Рассказываете о целях, мы разрабатываем план проекта
-                </li>
-                <li class="openclub__list-item">
-                  Принимаете решения о зонировании, выбирая по нашим 3d-моделям, мы индивидуально подбираем оборудование
-                </li>
-                <li class="openclub__list-item">
-                  Получаете консультацию по развитию и поддержке бизнеса
-                </li>
-                <li class="openclub__list-item">
-                  Принимаете решения о принятии на работу персонала, который мы подобрали специально для вас и обучили
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="openclub__it openclub__it-1">
-            <div class="openclub__it-inn">
-              <div class="openclub__it-tit">Самостоятельно</div>
-              <div class="openclub__price">от <span>800 000₽</span></div>
-              <div class="openclub__text">
-                Риски недополучения дохода <span>Вы можете получить проект, оснащенный оборудованием и готовый к работе, но без грамотного зонирования и комплекса услуг он не сможет приносить вам максимальный
-                доход.</span>
-              </div>
-              <ul class="openclub__list">
-                <li class="openclub__list-item">
-                  Изучаете все процессы по этапам работ и запуску проекта
-                </li>
-                <li class="openclub__list-item">
-                  Подбираете оборудование в соответствии с зонированием пространства и потребностями посетителей
-                </li>
-                <li class="openclub__list-item">
-                  Договориваетесь о доставке и монтаже оборудования
-                </li>
-                <li class="openclub__list-item">
-                  Подбираете оборудование в соответствии с зонированием пространства и потребностями посетителей
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div><!--openclub__items-->
-      </div>
-      <div class="openclub__slide">
-       <div class="openclub__tabs-control-w">
+  <div class="openclub__slider">
+    <div class="openclub__slide">        
+      <div class="openclub__tabs-control-w">
         <ul class="tab__list openclub__tabs-control">
           <li class="tab__list-item active">Neotren Pro</li>
           <li class="tab__list-item">Самостоятельно</li>          
         </ul>       
       </div>
       <div class="openclub__items">
-        <div class="openclub__it active">
+        <div class="openclub__it active animate slLeft delay-09">
           <div class="openclub__it-inn">
             <div class="openclub__it-tit">Neotren Pro</div>
             <div class="openclub__price">от <span>800 000₽</span></div>
@@ -665,7 +676,7 @@
             </ul>
           </div>
         </div>
-        <div class="openclub__it">
+        <div class="openclub__it animate slLeft delay-12">
           <div class="openclub__it-inn">
             <div class="openclub__it-tit">Самостоятельно</div>
             <div class="openclub__price">от <span>800 000₽</span></div>
@@ -720,7 +731,7 @@
           </ul>
         </div>
       </div>
-      <div class="openclub__it">
+      <div class="openclub__it openclub__it-1">
         <div class="openclub__it-inn">
           <div class="openclub__it-tit">Самостоятельно</div>
           <div class="openclub__price">от <span>800 000₽</span></div>
@@ -746,6 +757,116 @@
       </div>
     </div><!--openclub__items-->
   </div>
+  <div class="openclub__slide">
+   <div class="openclub__tabs-control-w">
+    <ul class="tab__list openclub__tabs-control">
+      <li class="tab__list-item active">Neotren Pro</li>
+      <li class="tab__list-item">Самостоятельно</li>          
+    </ul>       
+  </div>
+  <div class="openclub__items">
+    <div class="openclub__it active">
+      <div class="openclub__it-inn">
+        <div class="openclub__it-tit">Neotren Pro</div>
+        <div class="openclub__price">от <span>800 000₽</span></div>
+        <div class="openclub__text">Готовый к работе фитнес-клуб, оснащенный проверенным и качественным оборудованием, а также комплекс услуг по оптимизации бизнеса.</div>
+        <ul class="openclub__list">
+          <li class="openclub__list-item">
+            Рассказываете о целях, мы разрабатываем план проекта
+          </li>
+          <li class="openclub__list-item">
+            Принимаете решения о зонировании, выбирая по нашим 3d-моделям, мы индивидуально подбираем оборудование
+          </li>
+          <li class="openclub__list-item">
+            Получаете консультацию по развитию и поддержке бизнеса
+          </li>
+          <li class="openclub__list-item">
+            Принимаете решения о принятии на работу персонала, который мы подобрали специально для вас и обучили
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="openclub__it">
+      <div class="openclub__it-inn">
+        <div class="openclub__it-tit">Самостоятельно</div>
+        <div class="openclub__price">от <span>800 000₽</span></div>
+        <div class="openclub__text">
+          Риски недополучения дохода <span>Вы можете получить проект, оснащенный оборудованием и готовый к работе, но без грамотного зонирования и комплекса услуг он не сможет приносить вам максимальный
+          доход.</span>
+        </div>
+        <ul class="openclub__list">
+          <li class="openclub__list-item">
+            Изучаете все процессы по этапам работ и запуску проекта
+          </li>
+          <li class="openclub__list-item">
+            Подбираете оборудование в соответствии с зонированием пространства и потребностями посетителей
+          </li>
+          <li class="openclub__list-item">
+            Договориваетесь о доставке и монтаже оборудования
+          </li>
+          <li class="openclub__list-item">
+            Подбираете оборудование в соответствии с зонированием пространства и потребностями посетителей
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!--openclub__items-->
+</div>
+<div class="openclub__slide">
+ <div class="openclub__tabs-control-w">
+  <ul class="tab__list openclub__tabs-control">
+    <li class="tab__list-item active">Neotren Pro</li>
+    <li class="tab__list-item">Самостоятельно</li>          
+  </ul>       
+</div>
+<div class="openclub__items">
+  <div class="openclub__it active">
+    <div class="openclub__it-inn">
+      <div class="openclub__it-tit">Neotren Pro</div>
+      <div class="openclub__price">от <span>800 000₽</span></div>
+      <div class="openclub__text">Готовый к работе фитнес-клуб, оснащенный проверенным и качественным оборудованием, а также комплекс услуг по оптимизации бизнеса.</div>
+      <ul class="openclub__list">
+        <li class="openclub__list-item">
+          Рассказываете о целях, мы разрабатываем план проекта
+        </li>
+        <li class="openclub__list-item">
+          Принимаете решения о зонировании, выбирая по нашим 3d-моделям, мы индивидуально подбираем оборудование
+        </li>
+        <li class="openclub__list-item">
+          Получаете консультацию по развитию и поддержке бизнеса
+        </li>
+        <li class="openclub__list-item">
+          Принимаете решения о принятии на работу персонала, который мы подобрали специально для вас и обучили
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="openclub__it">
+    <div class="openclub__it-inn">
+      <div class="openclub__it-tit">Самостоятельно</div>
+      <div class="openclub__price">от <span>800 000₽</span></div>
+      <div class="openclub__text">
+        Риски недополучения дохода <span>Вы можете получить проект, оснащенный оборудованием и готовый к работе, но без грамотного зонирования и комплекса услуг он не сможет приносить вам максимальный
+        доход.</span>
+      </div>
+      <ul class="openclub__list">
+        <li class="openclub__list-item">
+          Изучаете все процессы по этапам работ и запуску проекта
+        </li>
+        <li class="openclub__list-item">
+          Подбираете оборудование в соответствии с зонированием пространства и потребностями посетителей
+        </li>
+        <li class="openclub__list-item">
+          Договориваетесь о доставке и монтаже оборудования
+        </li>
+        <li class="openclub__list-item">
+          Подбираете оборудование в соответствии с зонированием пространства и потребностями посетителей
+        </li>
+      </ul>
+    </div>
+  </div>
+</div><!--openclub__items-->
+</div>
 </div><!--openclub__slider-->
 
 </div>
@@ -765,8 +886,12 @@
       </div>
     </div>
   </div>
-  <div class="calculate__bot">
-    <img alt="image" title="image" src="img/calculate.jpg" class="calculate__bg">
+  <div class="calculate__bot">    
+    <picture>
+      <source class="lazy" srcset="img/calculate.jpg" type="image/jpeg" media="(min-width:575px)" />
+      <source class="lazy" srcset="img/calculate-pda.jpg" type="image/jpeg" media="(min-width:200px)" />
+      <img alt="image" title="image" src="img/calculate.jpg" class="calculate__bg lazy">
+    </picture>
   </div>
 </div>
 
@@ -809,7 +934,7 @@
           </label>
           <label class="calc__label">
             <input type="checkbox" name="stage_2" checked>
-            <span class="calc__check-span">Свободное железо</span>
+            <span class="calc__check-span">Свободне веса</span>
           </label>
           <label class="calc__label">
             <input type="checkbox" name="stage_2">
@@ -877,8 +1002,12 @@
           <p>Профессиональные тренажеры MATRIX (США) и BRONZE GYM (Германия);</p>
         </div>
         <a href="#" class="proj-sl__link show-767">instagramm</a>
-        <a href="#" class="proj-sl__img-w animate slBot delay-12">
-          <img alt="image" title="image" src="img/proj-sl-1.jpg" class="proj-sl__img">
+        <a href="#" class="proj-sl__img-w animate slBot delay-12">          
+<picture>
+      <source class="lazy" srcset="img/proj-sl-1.jpg" type="image/jpeg" media="(min-width:575px)">
+      <source class="lazy" srcset="img/proj-sl-1-pda.jpg" type="image/jpeg" media="(min-width:200px)">
+      <img alt="image" title="image" src="img/proj-sl-1.jpg" class="proj-sl__img">
+    </picture>
         </a>
       </div><!--proj-sl__slide-->
       <div class="proj-sl__slide">
@@ -892,8 +1021,12 @@
           <p>Профессиональные тренажеры MATRIX (США) и BRONZE GYM (Германия);</p>
         </div>
         <a href="#" class="proj-sl__link show-767">instagramm</a>
-        <a href="#" class="proj-sl__img-w  animate slBot delay-12">
-          <img alt="image" title="image" src="img/proj-sl-1.jpg" class="proj-sl__img">
+                <a href="#" class="proj-sl__img-w animate slBot delay-12">          
+<picture>
+      <source class="lazy" srcset="img/proj-sl-1.jpg" type="image/jpeg" media="(min-width:575px)">
+      <source class="lazy" srcset="img/proj-sl-1-pda.jpg" type="image/jpeg" media="(min-width:200px)">
+      <img alt="image" title="image" src="img/proj-sl-1.jpg" class="proj-sl__img">
+    </picture>
         </a>
       </div><!--proj-sl__slide-->
       <div class="proj-sl__slide">
@@ -956,6 +1089,7 @@
 </div>
 
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/lazyload.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/jquery.marquee.min.js"></script>
 <script src="js/dynamic_adapt.js"></script>
