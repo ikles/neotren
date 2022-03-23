@@ -45,22 +45,8 @@ jQuery(document).ready(function( $ ) {
     .siblings()
     .removeClass('active');
     slideIndex = $(this).index();
-    $('.showrooms__slider').slick('slickGoTo', parseInt(slideIndex))
+    $('.tabs__content').slick('slickGoTo', parseInt(slideIndex))
   });
-
-  
-  $(".showrooms__slider").each(function () {
-    $(this).slick({
-      dots: false,
-      arrows: false,
-      slidesToScroll: 1,
-      autoplay: false,    
-      slidesToShow: 2,
-      speed: 1400
-    });
-  });
-
-
 
 
   $(".openclub__slider").slick({
@@ -136,15 +122,15 @@ jQuery(document).ready(function( $ ) {
   if ($('.header__slider').length) {
     $('.header__slider').slick({
       infinite: true,    
-      speed: 600,
+      speed: 400,
       slidesToScroll: 1,
-      autoplay: true,    
+      autoplay: false,    
       slidesToShow: 1,
       cssEase: 'linear',  
-      autoplaySpeed: 2000,  
-      arrows: false,
+      autoplaySpeed: 0,  
+      arrows: true,
       dots: true,
-      pauseOnHover: false,  
+      pauseOnHover: true,  
       vertical: false,
       verticalSwiping: false,
     });  
@@ -159,25 +145,13 @@ jQuery(document).ready(function( $ ) {
       slidesToShow: 2,
       cssEase: 'linear',  
       autoplaySpeed: 0,  
-      arrows: false,
+      arrows: true,
       dots: false,
       pauseOnHover: true,  
       vertical: false,
       verticalSwiping: false,
     });  
   }
-
-    $(".proj-sl-2").each(function () {
-    $(this).slick({
-      dots: false,
-      arrows: true,
-      slidesToScroll: 1,
-      autoplay: false,    
-      slidesToShow: 1,
-      speed: 400,
-      infinite: false
-    });
-  });  
 
 
 
@@ -380,6 +354,16 @@ jQuery(document).ready(function( $ ) {
 
 
 
+  $(".showrooms__slider").each(function () {
+    $(this).slick({
+      dots: false,
+      arrows: false,
+      slidesToScroll: 1,
+      autoplay: false,    
+      slidesToShow: 2,
+      speed: 1400
+    });
+  })
 
 
 $('.animate').each(function () {
@@ -468,7 +452,6 @@ window.addEventListener('DOMContentLoaded', () => {
 }
 
 submitForm('.getcat__form');
-submitForm('.modal-form__form-1');
 
 
 });
